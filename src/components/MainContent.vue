@@ -19,11 +19,12 @@ export default {
   },
   methods: {
     getImages() {
-      console.log('da')
-      axios.get("http://localhost/api/v1/image"
-          + "?page=" + this.currentPage
-          + "&order_by=" + this.currentSortType
-      ).then((response) => {
+      axios.get("http://localhost/api/v1/image", {
+        params: {
+          page: this.currentPage,
+          order_by: this.currentSortType
+        }
+      }).then((response) => {
         this.images = response.data.data;
         this.pages = response.data.meta.last_page;
         this.links = response.data.links;

@@ -9,7 +9,7 @@ export default {
     <div class="header__card">
       <h1 class="header__card-title">Image Host Test</h1>
       <p class="header__card-text">
-        Прототип хостинга изображений. Ну, вы меня пон.
+        Хостинг изображений.
       </p>
     </div>
   </header>
